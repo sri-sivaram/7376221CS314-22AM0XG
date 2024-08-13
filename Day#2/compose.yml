@@ -1,0 +1,14 @@
+version: "3"
+services:
+  nginx1:
+    image: "nginx:latest"
+    container_name: nginx_1
+    restart: always
+    ports:
+      - "7777:80"
+  nginx2:
+    image: "nginx:latest"
+    container_name: nginx_2
+    restart: always
+    ports:
+      - "8888:80"
